@@ -1,0 +1,25 @@
+{
+    "name": "dansup/laravel-edmunds",
+    "type": "laravel-package",
+    "description": "An unoffical Edmunds SDK for the Laravel Framework",
+    "keywords": ["edmunds", "automotive", "laravel", "vehicle", "sdk", "vin"],
+    "homepage": "https://github.com/dansup/laravel-edmunds",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Supernault",
+            "email": "danielsupernault@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "~5.5|~7.0",
+        "illuminate/support": "5.*",
+        "guzzlehttp/guzzle": "6.*"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Dansup\\Edmunds\\": "src/"
+        }
+    }
+}
