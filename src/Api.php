@@ -6,22 +6,33 @@ use Dansup\Edmunds\Two\Client;
 
 class Api extends Client
 {
-    public $decodeVin;
-
-    public function decodeVin($vin, $returnFullResponse = false)
+    public function decodeVin($vin, $fmt = "array")
     {
-      $apiurl = "{$this->apiUrl}/vehicle/v2/vins/{$vin}";
-      $res = $this->client->request('GET', $apiurl, ['stream' => false]);
-      $body = json_decode($res->getBody());
-      if($returnFullResponse == true) {
-        $resp = [
-        'status-code' =>  $res->getStatusCode(),
-        'content-type' => $res->getHeader('content-type'),
-        'body' => $body
-        ];
-      } else {
-        $resp = $body;
-      }
-      return $resp;
+      return $this->query("{$this->apiUrl}/vehicle/v2/vins/{$vin}", $fmt);
+    }
+    public function getAllMakes($fmt = "array")
+    {
+      return $this->query("{$this->apiUrl}/vehicle/v2/makes", $fmt);
+    }
+
+    public function getMake($make, $fmt = "array")
+    {
+        return $this->query("{$this->apiUrl}/vehicle/v2/{$make}", $fmt);
+    }
+    public function getPhotosByTag($tag, $fmt = "array")
+    {
+        return $this->queryString("{$this->apiUrl}/media/v2/photoset", "tag", $tag, $fmt);
+    }
+    public function getPhotosByMakeModelYear($make, $model, $year, $fmt = "array")
+    {
+        return $this->query("{$this->apiUrl}/media/v2/{$make}/{$model}/{$year}/photos", $fmt);
+    }
+    public function getPhotosByStyleId($styleId, $fmt = "array")
+    {
+        return $this->query("{$this->apiUrl}/media/v2/styles/{$styleId}/photos", $fmt);
+    }
+    public function getVehicleDetailsByStyleId($styleId, $fmt = "array")
+    {
+        return $this->queryString("{$this->apiUrl}/vehicle/v2/styles/{$styleId}", "view", "full", $fmt);
     }
 }
