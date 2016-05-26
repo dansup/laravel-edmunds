@@ -13,7 +13,7 @@ class EdmundServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/laravel-edmunds.php' => $this->app->configPath().'/'.'laravel-edmunds.php',
-        ], 'config');
+            ], 'config');
     }
 
     /**
