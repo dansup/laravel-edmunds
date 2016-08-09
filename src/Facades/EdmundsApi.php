@@ -1,6 +1,6 @@
 <?php
 
-namespace Dansup\Edmunds\Facades;
+namespace Edmunds\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

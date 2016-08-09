@@ -3,9 +3,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Latest Version](https://img.shields.io/github/release/dansup/laravel-edmunds.svg?style=flat-square)](https://github.com/dansup/laravel-edmunds/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 
@@ -107,9 +104,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-downloads]: https://img.shields.io/packagist/dt/dansup/laravel-edmunds.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/dansup/laravel-edmunds
-[link-travis]: https://travis-ci.org/dansup/laravel-edmunds
-[link-scrutinizer]: https://scrutinizer-ci.com/g/dansup/laravel-edmunds/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/dansup/laravel-edmunds
 [link-downloads]: https://packagist.org/packages/dansup/laravel-edmunds
-[link-author]: https://github.com/:author_username
-[link-contributors]: ../../contributors
