@@ -3,9 +3,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Latest Version](https://img.shields.io/github/release/dansup/laravel-edmunds.svg?style=flat-square)](https://github.com/dansup/laravel-edmunds/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 
@@ -28,7 +25,7 @@ You must install this service provider.
 
 'providers' => [
     ...
-    Dansup\Edmunds\EdmundServiceProvider::class,
+    Edmunds\EdmundServiceProvider::class,
     ...
 ];
 ```
@@ -41,7 +38,7 @@ This package also comes with a facade, which provides an easy way to access it.
 
 'aliases' => [
   ...
-    'EdmundsApi' => Dansup\Edmunds\Facades\EdmundsApi::class,
+    'EdmundsApi' => Edmunds\Facades\EdmundsApi::class,
     ...
 ]
 ```
@@ -49,7 +46,7 @@ This package also comes with a facade, which provides an easy way to access it.
 You can publish the config file of the package using artisan.
 
 ```bash
-php artisan vendor:publish --provider="Dansup\Edmunds\EdmundServiceProvider"
+php artisan vendor:publish --provider="Edmunds\EdmundServiceProvider"
 ```
 
 The config file looks like this:
@@ -99,17 +96,6 @@ If you discover any security related issues, please email [me (email in profile)
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/dansup/laravel-edmunds.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/dansup/laravel-edmunds/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/dansup/laravel-edmunds.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/dansup/laravel-edmunds.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/dansup/laravel-edmunds.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/dansup/laravel-edmunds
-[link-travis]: https://travis-ci.org/dansup/laravel-edmunds
-[link-scrutinizer]: https://scrutinizer-ci.com/g/dansup/laravel-edmunds/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/dansup/laravel-edmunds
 [link-downloads]: https://packagist.org/packages/dansup/laravel-edmunds
-[link-author]: https://github.com/:author_username
-[link-contributors]: ../../contributors
