@@ -1,6 +1,6 @@
 <?php
 
-namespace Dansup\Edmunds\Two;
+namespace Edmunds\Two;
 
 use GuzzleHttp;
 
