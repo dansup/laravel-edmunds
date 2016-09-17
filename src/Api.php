@@ -1,8 +1,8 @@
 <?php
 
-namespace Edmunds;
+namespace Dansup\Edmunds;
 
-use Edmunds\Two\Client;
+use Dansup\Edmunds\Two\Client;
 
 class Api extends Client
 {
