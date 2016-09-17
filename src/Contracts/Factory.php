@@ -1,6 +1,6 @@
 <?php
 
-namespace Edmunds\Contracts;
+namespace Dansup\Edmunds\Contracts;
 
 interface Factory
 {

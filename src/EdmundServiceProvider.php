@@ -1,6 +1,6 @@
 <?php
 
-namespace Edmunds;
+namespace Dansup\Edmunds;
 
 use Illuminate\Support\ServiceProvider;
 
