@@ -25,7 +25,7 @@ You must install this service provider.
 
 'providers' => [
     ...
-    Edmunds\EdmundServiceProvider::class,
+    Dansup\Edmunds\EdmundServiceProvider::class,
     ...
 ];
 ```
@@ -38,7 +38,7 @@ This package also comes with a facade, which provides an easy way to access it.
 
 'aliases' => [
   ...
-    'EdmundsApi' => Edmunds\Facades\EdmundsApi::class,
+    'EdmundsApi' => Dansup\Edmunds\Facades\EdmundsApi::class,
     ...
 ]
 ```
@@ -46,7 +46,7 @@ This package also comes with a facade, which provides an easy way to access it.
 You can publish the config file of the package using artisan.
 
 ```bash
-php artisan vendor:publish --provider="Edmunds\EdmundServiceProvider"
+php artisan vendor:publish --provider="Dansup\Edmunds\EdmundServiceProvider"
 ```
 
 The config file looks like this:
