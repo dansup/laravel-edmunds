@@ -12,7 +12,7 @@ class EdmundServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/laravel-edmunds.php' => $this->app->configPath().'/'.'laravel-edmunds.php',
+            __DIR__.'/../config/laravel-edmunds.php' => config_path('laravel-edmunds.php'),
             ], 'config');
     }
 
@@ -24,9 +24,7 @@ class EdmundServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-edmunds.php', 'laravel-edmunds');
 
         $this->app->bind('laravel-edmunds', function () {
-
             return new Api();
-
         });
     }
 

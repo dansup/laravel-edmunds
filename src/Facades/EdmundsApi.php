@@ -13,6 +13,6 @@ class EdmundsApi extends Facade
      */
     protected static function getFacadeAccessor()
     {
-      return 'laravel-edmunds';
+        return 'laravel-edmunds';
     }
-  }
+}
